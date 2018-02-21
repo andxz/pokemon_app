@@ -8,10 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="../andrez_romero_todo/css/style.css">
+
+
     <link rel="shortcut icon" href="img/favicon.ico">
 
-<link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 
 
 
@@ -28,12 +32,18 @@
 
             <br />
 
-<h2>
-Add a Todo here:
-</h2> <br /> <br />
+            <h2>
+                Add a Todo here:
+            </h2> <br /> <br />
 
-<input type="text" id="submit_todo">
-<button onclick="myFunction()">Submit</button>
+            <input type="text" id="submit_todo">
+            <button class="button_style" onclick="input_Todo()">Submit</button>
+
+
+            <!--- <button id="addButton">Min knapp</button>
+            <button id="removeButton">remove</button> -->
+
+
 
 
 
@@ -45,34 +55,65 @@ Add a Todo here:
     <main>
 
         <div class="left_todo">
+            <div class="left_header">
 
-<h2>
-Todo's <i class="fa fa-square-o"></i> :
+                <h2>
+                    Todo's <i class="fa fa-square-o"></i>
 
-</h2>
+                </h2>
+            </div>
+
+            <div class="right_header">
+
+                <button class="button_style" onclick="delete_allTodos()">Delete All</button>
+            </div>
 
 
 
 
-<br />
-            <p id="todo"></p>
+            <ul id="todo">
+                <li>Sova</li>
+                <li>Träna</li>
+                <li>Laga mat</li>
+                <li>Diska</li>
+                <li>Plugga</li>
+
+            </ul>
+
+
 
 
         </div>
 
         <div class="right_todo">
 
-<h2>
-Done Todos
-<i class="fa fa-check-square-o"></i> :
-
-</h2>
+            <div class="left_header">
 
 
+                <h2>
+                    Done Todos
+                    <i class="fa fa-check-square-o"></i>
+
+                </h2>
+            </div>
+
+            <div class="right_header">
+                <button class="button_style" onclick="delete_allDoneTodos()">Delete All</button>
+
+            </div>
+
+
+            <br /> <br />
+
+
+            <ul id="done_todo">
+
+            </ul>
 
 
 
-<br />
+
+            <br />
 
 
         </div>
@@ -83,7 +124,9 @@ Done Todos
     </main>
 
     <footer>
- Andrez Romero 2018   ©     <script src="../andrez_romero_todo/main.js"></script>
+        Andrez Romero 2018 ©
+        <script src="../andrez_romero_todo/main.js"></script>
+
 
     </footer>
 
