@@ -134,12 +134,29 @@ li {
     color: darkgreen;
     float: right;
     padding-right: 15px;
+cursor: pointer;
+    box-sizing: border-box;
 
 }
 
 .close {
     color: red;
     float: right;
+cursor: pointer;
+    box-sizing: border-box;
+
+
+
+}
+
+.node_class {
+
+float: left;
+width: 100%;
+color: goldenrod;
+border: 1px solid black;
+    box-sizing: border-box;
+
 
 }
 
