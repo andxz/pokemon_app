@@ -1,5 +1,5 @@
 
-/* First function receives information from input and transforms into a new li with textnode everytime we click Submit */
+/* First function receives information from input and transforms into a new li with textnode(todo) everytime we click Submit */
 
 function input_Todo() {
 
@@ -13,7 +13,7 @@ function input_Todo() {
     /* Adds Delete Button to the new todo */
 
     var deleteButton = document.createElement("span");
-    var txt = document.createTextNode("RADERA");
+    var txt = document.createTextNode("Delete");
     deleteButton.className = "close";
     deleteButton.appendChild(txt);
 
@@ -22,7 +22,7 @@ function input_Todo() {
     /* Adds Done Button to the new todo */
 
     var doneButton = document.createElement("span");
-    var txt = document.createTextNode("KLAR");
+    var txt = document.createTextNode("Done");
     doneButton.className = "done";
     doneButton.appendChild(txt);
 
@@ -63,7 +63,7 @@ var myNodelistDelete = document.getElementsByTagName("li");
 var i;
 for (i = 0; i < myNodelistDelete.length; i++) {
     var deleteButton = document.createElement("span");
-    var txt = document.createTextNode("RADERA");
+    var txt = document.createTextNode("Delete");
     deleteButton.className = "close";
     deleteButton.appendChild(txt);
     myNodelistDelete[i].appendChild(deleteButton);
@@ -75,7 +75,7 @@ var myNodelistDone = document.getElementsByTagName("li");
 var i;
 for (i = 0; i < myNodelistDone.length; i++) {
     var doneButton = document.createElement("span");
-    var txt = document.createTextNode("KLAR");
+    var txt = document.createTextNode("Done");
     doneButton.className = "done";
     doneButton.appendChild(txt);
     myNodelistDone[i].appendChild(doneButton);
