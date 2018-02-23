@@ -1,7 +1,5 @@
 
-
-/* First function receives information from input and transforms into a new li everytime
-we click submit */
+/* First function receives information from input and transforms into a new li with textnode everytime we click Submit */
 
 function input_Todo() {
 
@@ -12,7 +10,7 @@ function input_Todo() {
     node.appendChild(textnode);
     document.getElementById("todo").appendChild(node);
 
-    /* lägger till delete button på node från inputfält */
+    /* Adds Delete Button to the new todo */
 
     var deleteButton = document.createElement("span");
     var txt = document.createTextNode("RADERA");
@@ -21,8 +19,7 @@ function input_Todo() {
 
     node.appendChild(deleteButton);
 
-
-    /* lägger till done button på node från inputfält */
+    /* Adds Done Button to the new todo */
 
     var doneButton = document.createElement("span");
     var txt = document.createTextNode("KLAR");
@@ -31,11 +28,7 @@ function input_Todo() {
 
     node.appendChild(doneButton);
 
-
-
-
-    /*for each loop that moves the item from Todo to Done Todos-list */
-
+    /*For Each loop that moves the item from Todo to Done Todos-list when clicked */
 
     const todo = document.getElementById('todo');
     const done = document.getElementById('done_todo')
@@ -49,8 +42,7 @@ function input_Todo() {
         })
     }
 
-
-    /* Function that deletes Todo that you click on */
+    /* Function that deletes todo if Delete button clicked */
 
     var close = document.getElementsByClassName("close");
     var i;
@@ -61,16 +53,9 @@ function input_Todo() {
         }
     }
 
-
-
-
-
 }
 
-
-
-/*close "radera" button created by nodes an added to all li with todos 
-with foreach-loop*/
+    /* Adds Delete Button to the existing todos */
 
 var myNodelistDelete = document.getElementsByTagName("li");
 var i;
@@ -80,13 +65,9 @@ for (i = 0; i < myNodelistDelete.length; i++) {
     deleteButton.className = "close";
     deleteButton.appendChild(txt);
     myNodelistDelete[i].appendChild(deleteButton);
-
-
 }
 
-
-/*done "klar" button created by nodes an added to all li with todos
-with foreach-loop*/
+    /* Adds Done Button to the existing todos */
 
 var myNodelistDone = document.getElementsByTagName("li");
 var i;
@@ -98,9 +79,7 @@ for (i = 0; i < myNodelistDone.length; i++) {
     myNodelistDone[i].appendChild(doneButton);
 }
 
-
-/*for each loop that moves the item from Todo to Done Todos-list */
-
+    /*For Each loop that moves the item from Todo to Done Todos-list when clicked */
 
 const todo = document.getElementById('todo');
 const done = document.getElementById('done_todo');
@@ -112,14 +91,9 @@ for (const item of listItems) {
         done.appendChild(this);
 
     })
-
-
-
-
 }
 
-
-/* Function that deletes Todo that you click on */
+    /* Function that deletes todo if Delete button clicked */
 
 var close = document.getElementsByClassName("close");
 var i;
@@ -130,9 +104,7 @@ for (i = 0; i < close.length; i++) {
     }
 }
 
-
-
-/*Function that deletes all Todo from Todos-list */
+/*Function that deletes All Todos from Todos-list */
 
 function delete_allTodos() {
     var list = document.getElementById("todo");
@@ -141,7 +113,7 @@ function delete_allTodos() {
     }
 }
 
-/*Function that deletes all Todo from Done Todos-list */
+/*Function that deletes all Todos from Done Todos-list */
 
 function delete_allDoneTodos() {
     var list = document.getElementById("done_todo");

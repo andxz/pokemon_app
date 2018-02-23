@@ -1,2 +1,2 @@
-Project title: Todo in Javascript
+Project title: Todo in Javascript <br />
 By: Andrez Romero
