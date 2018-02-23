@@ -38,10 +38,9 @@ function input_Todo() {
         item.addEventListener('click', function () {
             todo.removeChild(this);
             done.appendChild(this);
-
         })
     }
-
+        
     /* Function that deletes todo if Delete button clicked */
 
     var close = document.getElementsByClassName("close");
@@ -52,8 +51,11 @@ function input_Todo() {
             div.style.display = "none";
         }
     }
-
 }
+
+/*Input function ends^ */
+
+
 
     /* Adds Delete Button to the existing todos */
 

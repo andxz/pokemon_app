@@ -105,7 +105,8 @@ li {
     font-weight: 800;
 }
 
-.done {
+.done{
+    display: block;
     color: darkgreen;
     float: right;
     padding-right: 15px;
@@ -118,6 +119,10 @@ li {
     float: right;
     cursor: pointer;
     box-sizing: border-box;
+}
+
+#done_todo .done {
+display:none
 }
 
 .node_class {
