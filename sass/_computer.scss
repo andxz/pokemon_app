@@ -20,21 +20,42 @@ body {
 
 header {
     padding: 0px;
-    height: 275px;
+    height: 500px;
     width: 100%;
     background-color: #90C3DF;
     padding-top: 0px;
+text-align: center;
 }
 
 .main_header {
-    padding: 40px;
+    padding: 20px;
 }
 
 main {
     padding-top: 20px;
 }
 
-.left_todo {
+.left_header_img {
+
+float: left;
+width: 70%;
+height: 250px;
+box-sizing: border-box;
+
+}
+
+.right_header_img {
+
+float: right;
+width: 30%;
+height: 250px;
+padding-top: 50px;
+box-sizing: border-box;
+
+
+}
+
+.left_card {
     padding: 40px;
     padding-top: 20px;
     float: left;
@@ -53,14 +74,12 @@ main {
 }
 
 .right_header {
-    float: right;
-    text-align: right;
     width: 40%;
     height: 70px;
     box-sizing: border-box;
 }
 
-.right_todo {
+.right_card {
     float: right;
     padding: 40px;
     padding-top: 20px;
@@ -82,6 +101,16 @@ footer {
 img {
     max-width: 100%;
     height: auto;
+}
+
+.logo {
+
+
+}
+
+.snorlax {
+
+
 }
 
 a {
@@ -166,7 +195,7 @@ input[type=text]:focus {
 }
 
 h1 {
-    font-size: 65px;
+    font-size: 45px;
     font-weight: 800;
     margin: 0px;
     display: inline;
@@ -180,3 +209,12 @@ h2 {
     display: inline;
 
 }
+
+h3 {
+    font-size: 30px;
+    font-weight: 800;
+    margin: 0px;
+    display: inline;
+
+}
+
