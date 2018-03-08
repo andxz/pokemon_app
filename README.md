@@ -1,2 +1,2 @@
-Project title: Todo in Javascript <br />
+Project title: Pokemon Search App <br />
 By: Andrez Romero
