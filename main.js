@@ -1,14 +1,12 @@
 const searchPokemon = document.getElementById('searchPokemon');
+const PokemonInfoElement = document.getElementById('Pokemon');
 
-searchPokemon.addEventListener('change', function(){
-  const searchValue = searchPokemon.value;
-  getPokemon(searchValue);
-})
+getPokemon();
 
-getPokemon("Stockholm");
+function getPokemon(){
+var pokeURL = 'https://pokeapi.co/api/v2/pokemon/';
 
-function getPokemon(city){
-  fetch('https://pokeapi.co/api/v2/pokemon/?limit=151')
+  fetch(pokeURL)
     .then(function(response){
       return response.json();
     })
@@ -20,17 +18,12 @@ function getPokemon(city){
     })
 }
 
-
 function displayPokemon(pokemonData){
-  const PokemonInfoElement = document.getElementById('Pokemon');
-
-  let Pokemon = `
+  let PokemonHTML = `
     <h3>Pokemon:</h3>
     <p> ${pokemonData.results[0].name} </p>
-
   `;
 
-  PokemonInfoElement.innerHTML = Pokemon;
+  PokemonInfoElement.innerHTML = PokemonHTML;
 }
-
 
