@@ -19,17 +19,23 @@ var pokeURL = 'https://cors-anywhere.herokuapp.com/https://pokeapi.co/api/v2/pok
 }
 
 function displayPokemon(pokemonData){
-  let PokemonHTML = '<h3>Pokémon:</h3>';
+  let PokemonHTML = '';
   let pokemonArray = pokemonData.results;
   for(let pokemon of pokemonArray){
       
-      PokemonHTML = PokemonHTML + `<p> <a href="${pokemon.url}"> ${pokemon.name} </a> </p>`;
+      PokemonHTML = PokemonHTML + `<p onclick="morePokemonInfo()"> ${pokemon.name} </p>
+`;
       
   }
     
   PokemonInfoElement.innerHTML = PokemonHTML;
 }
 
+function morePokemonInfo() {
+    document.getElementById("Pokemon_info_1").innerHTML = "YOU CLICKED ME!";
+
+
+}
 
 
 /* When the user clicks on the button, 
