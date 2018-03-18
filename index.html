@@ -10,6 +10,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
 </head>
@@ -22,18 +23,19 @@
             <div class="right_header_img">
                 <img src="../andrez_romero_ajax/images/snorlax.png">
             </div>
-            <br />
-            <h1>POKÉDEX OF ORIGINAL 151</h1>
-            <br />
+            <h1>POKÉDEX OF THE ORIGINAL 151</h1>
+            <br /><br /> 
+<!--
             <h2>
-                Search Pokémon here:
+                Choose a Pokémon here:
             </h2> <br /> <br />
+-->
 
-            <input type="text" id="searchPokemon" placeholder="Write your Pokemon Here">
+<!--            <input type="text" id="searchPokemon" placeholder="Write your Pokemon Here">-->
 <!--            <button class="button_style" onclick="input_Todo()">Submit</button>-->
 
 <div class="dropdown">
-  <button onclick="myFunction()" class="dropbtn">Or Choose From The List</button>
+  <button onclick="selectPokemonDropdown()" class="dropbtn">Click here to choose a Pokémon</button>
   <div id="myDropdown" class="dropdown-content scrollable-menu">
     <div id="Pokemon">
         
@@ -51,21 +53,35 @@
             <div class="left_header">
 
 
-    <div id="Pokemon_info_1">
+    <p id="displayPokemonBox">
+        
+                </p>
+
+
+    <div id="displayPokemon">
         
                 </div>
+  <div id="movieInfo">
 
+  </div>
+                    <div id="weatherInfo">
+    </div>
 
+<!--
+<form id=pokeform>
+  <input id=pokenumber placeholder="Number of the pokemon"/>
+  <button type=submit>Go!</button>
+</form>
+
+<h1 id=pokename></h1>
+<h1 id=pokeid></h1>
+
+<img id="pokeimage"/>
+-->
             </div>
 
         </div>
 
-        <div class="right_card">
-            <div class="right_header">
-
-            </div>
-
-        </div>
 
     </main>
 

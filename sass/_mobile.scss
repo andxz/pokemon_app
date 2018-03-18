@@ -2,6 +2,7 @@
 
     header {
         width: 100%;
+        height: 350px;
     }
 
     .left_todo {
@@ -10,23 +11,37 @@
         height: 100%;
     }
 
+    .left_header_img {
+        height: 140px;
 
-    .right_todo {
-        float: left;
-        width: 100%;
-        height: 100%;
+
     }
 
-    input[type=text] {
-        width: 50%;
+    .right_header_img {
+        height: 140px;
+    }
+
+    .dropbtn {
+        width: 350px;
+    }
+
+    .dropdown-content {
+        width: 350px;
     }
 
     footer {
         width: 100%;
     }
 
+    li {
+
+        font-size: 20px;
+
+
+    }
+
     h1 {
-        font-size: 45px;
+        font-size: 25px;
         font-weight: 800;
         margin: 0px;
         display: inline;
