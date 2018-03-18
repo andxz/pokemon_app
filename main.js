@@ -26,7 +26,7 @@ function displayPokemon(pokemonData) {
     let pokemonArray = pokemonData.results;
     for (let pokemon of pokemonArray) {
 
-        PokemonHTML = PokemonHTML + `<li onclick="morePokemonInfo()" id ="${pokemon.name}"> ${pokemon.name} <li>
+        PokemonHTML = PokemonHTML + `<li id="${pokemon.name}" onClick="reply_click(this.id)" > ${pokemon.name} <li>
 `;
     }
 
@@ -35,15 +35,32 @@ function displayPokemon(pokemonData) {
 
     }
 
+function reply_click(clicked_id) {
+
+document.getElementById("displayPokemonBox").innerHTML = clicked_id;
+
+
+
+    }
+
 //function morePokemonInfo() {
 //
-//    var x = document.getElementById("Pokemon").value;
-//    document.getElementById("displayPokemonBox").innerHTML = x;
+//    var itm = document.getElementById("myList2").lastChild;
+//    var cln = itm.cloneNode(true);
+//    document.getElementById("myList1").appendChild(cln);
+//
+//var cln = item.cloneNode(true);
+//displayPokemon.appendChild(cln);
+//
+//var para = document.createElement("p");
+//para.appendChild(x);
+//displayPokemon.appendChild(para);
 //
 //
 //}
 
-
+//    var x = document.getElementById("Pokemon").value;
+//    document.getElementById("displayPokemonBox").innerHTML = x;
 //
 //
 //PokemonList.addEventListener('change', () => {
@@ -75,6 +92,60 @@ function displayPokemon(pokemonData) {
 //  `;
 //  displayPokemonHTML.innerHTML = newInfo;
 //}
+
+
+
+
+//
+//const search = (event) => {
+//  event.preventDefault();
+//  const pokenumber = document.getElementById("pokenumber").value;
+//  const baseURL = "https://pokeapi.co/api/v2/pokemon/";
+//  $.get(baseURL + pokenumber, (pokemon) => {
+//    document.getElementById("pokename").innerHTML = pokemon.name;
+//    document.getElementById("pokeid").innerHTML = pokemon.id;
+//    document.getElementById("pokeimage").src = pokemon.sprites.front_default;
+//  });
+//}
+//document.getElementById("pokeform").addEventListener('submit', search);
+//
+
+//fetchMovieAsync();
+//
+//
+//
+//async function fetchMovieAsync(){
+//  const url = 'https://cors-anywhere.herokuapp.com/https://ghibliapi.herokuapp.com/films/0440483e-ca0e-4120-8c50-4c8cd9b965d6';
+//  const response = await fetch(url);
+//  const movie = await response.json();
+//  let people = movie.people;
+//  let promiseArray = [];
+//  for(personURL of people){ 
+//    let personPromise = await fetch(personURL)
+//    let person = await personPromise.json();
+//    promiseArray.push(person);
+//  }
+//  const allPeople = await Promise.all(promiseArray);
+//  const movieInfo = document.getElementById('movieInfo');
+//  let htmlBlock = `<h1>${movie.title} Characters</h1>`;
+//  for(let person of allPeople){
+//    htmlBlock += `
+//      <div class="person">
+//        <p><span style="color: #999">name:</span> ${person.name}</p>
+//        <p><span style="color: #999">age:</span> ${person.age}</p>
+//      </div>
+//    `;
+//  }
+//  movieInfo.innerHTML = htmlBlock;
+//}
+//
+//        var cln = item.cloneNode(true);
+//        displayPokemon.appendChild(cln);
+//
+//var para = document.createElement("p");
+//para.appendChild(x);
+//displayPokemon.appendChild(para);
+
 
 
 
