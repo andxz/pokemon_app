@@ -26,7 +26,7 @@ function displayPokemon(pokemonData) {
     let pokemonArray = pokemonData.results;
     for (let pokemon of pokemonArray) {
 
-        PokemonHTML = PokemonHTML + `<li id="${pokemon.name}" onClick="reply_click(this.id)" > ${pokemon.name} <li>
+        PokemonHTML = PokemonHTML + `<li id="${pokemon.name}" onClick="morePokemonInfo(this.id)" > ${pokemon.name} <li>
 `;
     }
 
@@ -35,63 +35,38 @@ function displayPokemon(pokemonData) {
 
     }
 
-function reply_click(clicked_id) {
+function morePokemonInfo(clicked_id) {
 
-document.getElementById("displayPokemonBox").innerHTML = clicked_id;
+const InfoAboutPokemon = clicked_id;
+
+getPokemon();
+
+function getPokemon(){
+
+  fetch(`https://cors-anywhere.herokuapp.com/https://pokeapi.co/api/v2/pokemon/` + InfoAboutPokemon)
+    .then((response) => response.json())
+    .then((PokemonInfoData) =>  {
+      displayPokemonInfo(PokemonInfoData)
+    })
+    .catch((error) => {
+      console.log(error);
+    })
+}
 
 
+function displayPokemonInfo(PokemonInfoData){
+
+  const displayPokemonHTML = document.getElementById('displayPokemon');
+  let newInfo = `
+    <p> ${PokemonInfoData.name}</p>
+  `;
+  displayPokemonHTML.innerHTML = newInfo;
+}
 
     }
 
-//function morePokemonInfo() {
-//
-//    var itm = document.getElementById("myList2").lastChild;
-//    var cln = itm.cloneNode(true);
-//    document.getElementById("myList1").appendChild(cln);
-//
-//var cln = item.cloneNode(true);
-//displayPokemon.appendChild(cln);
-//
-//var para = document.createElement("p");
-//para.appendChild(x);
-//displayPokemon.appendChild(para);
-//
-//
-//}
 
-//    var x = document.getElementById("Pokemon").value;
-//    document.getElementById("displayPokemonBox").innerHTML = x;
-//
-//
-//PokemonList.addEventListener('change', () => {
-//  const searchValue = PokemonList.value;
-//  getPokemon(PokemonList);
-//})
-//
-//getPokemon();
-//
-//// Expects a parameter!!!
-//function getPokemon(selectedPokemon){
-//
-//  fetch(`https://cors-anywhere.herokuapp.com/https://pokeapi.co/api/v2/pokemon/` + selectedPokemon)
-//    .then((response) => response.json())
-//    .then((PokemonInfoData) =>  {
-//      displayPokemonInfo(PokemonInfoData)
-//    })
-//    .catch((error) => {
-//      console.log(error);
-//    })
-//}
-//
-//
-//function displayPokemonInfo(PokemonInfoData){
-//
-//  const displayPokemonHTML = document.getElementById('displayPokemon');
-//  let newInfo = `
-//    <p> ${PokemonInfoData.name}</p>
-//  `;
-//  displayPokemonHTML.innerHTML = newInfo;
-//}
+
 
 
 
