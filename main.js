@@ -58,7 +58,44 @@ function displayPokemonInfo(PokemonInfoData){
 
   const displayPokemonHTML = document.getElementById('displayPokemon');
   let newInfo = `
-    <p> ${PokemonInfoData.name}</p>
+<h2> ${PokemonInfoData.name}</h2>
+
+<div class="style">
+    <p> Pokedex Number: ${PokemonInfoData.id}</p>
+</div>
+<div class="infoElements">
+
+<h3>Type</h3>
+    <p>${PokemonInfoData.types[1].type.name}</p>
+
+</div>
+
+<div class="infoElements">
+
+<h3>Weight</h3>
+    <p>${PokemonInfoData.weight} KG </p>
+
+</div>
+<div class="infoElements">
+
+<h3>Main Move</h3>
+
+    <p>${PokemonInfoData.moves[60].move.name}</p>
+
+</div>
+
+<div class="infoElements">
+
+<h3>HP</h3>
+    <p>${PokemonInfoData.stats[5].base_stat}</p>
+
+</div>
+    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${PokemonInfoData.id}.png" width="50%" height="25%"/>
+    <br />
+
+
+
+
   `;
   displayPokemonHTML.innerHTML = newInfo;
 }
@@ -69,8 +106,8 @@ function displayPokemonInfo(PokemonInfoData){
 
 
 
-
-
+//
+//
 //
 //const search = (event) => {
 //  event.preventDefault();
@@ -83,7 +120,7 @@ function displayPokemonInfo(PokemonInfoData){
 //  });
 //}
 //document.getElementById("pokeform").addEventListener('submit', search);
-//
+
 
 //fetchMovieAsync();
 //
