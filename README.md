@@ -1,7 +1,7 @@
 <h1> Done by: Andrez Romero </h1>
 
 
-<p><a href="https://github.com/andxz/pokemon_app">Link to Github Pages</a> <br/>
+<p><a href="https://andxz.github.io/pokemon_app/">Link to Github Pages</a> <br/>
     <a href="https://github.com/andxz/pokemon_app">Link to Github Repository</a> </p>
 
 <p>
