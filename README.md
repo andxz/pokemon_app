@@ -1,5 +1,3 @@
-Din kod ska finnas på GitHub och ha en tydlig README med följande information:
-
 <h1> Done by: Andrez Romero </h1>
 
 
@@ -24,15 +22,15 @@ The Pokemon App is made by:
 
 <h2>Process </h2>
 
+I started by
+
 
 <h2> To Do: </h2>
 
 <p> 
-The Pokemon App is made by:
 <ul>
 <li>Add a Loading Screen</li>
 <li>Put the JSON files on my own Website for faster Fetch.</li>
 </ul>
 </p>
-
-kortfattat om din arbetsprocess och vad som skulle kodmässigt kunna förbättras. Man kan t.ex. ha en "TODO"-sektion i ens README med saker som skulle kunna implementeras om tid fanns.
+xs
