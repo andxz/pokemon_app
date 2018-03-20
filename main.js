@@ -18,7 +18,6 @@ const PokemonList = document.getElementById('Pokemon');
 
 /*Function that continues trough Fetch above and Loops out Pokemon name and ID into a List */
 
-
 function displayPokemon(pokemonData) {
 
     let PokemonHTML = '';
@@ -32,7 +31,7 @@ function displayPokemon(pokemonData) {
     }
 
 
-/*Function that recives the Clicked ID and makes a new Fetch to diffrent API with it*/
+/*Function that recives the Clicked ID and makes a new Fetch to diffrent API with it when clicked*/
 
 function morePokemonInfo(clicked_id) {
 
@@ -44,12 +43,15 @@ function morePokemonInfo(clicked_id) {
         fetch(`https://cors-anywhere.herokuapp.com/https://pokeapi.co/api/v2/pokemon/` + InfoAboutPokemon)
             .then((response) => response.json())
             .then((PokemonInfoData) => {
-                displayPokemonInfo(PokemonInfoData)
+                displayPokemonInfo(PokemonInfoData);
             })
             .catch((error) => {
                 console.log(error);
             })
     }
+
+}
+
 
 /*Function that continues trough Fetch above and Loops out diffrent Information about Selected Pokemon*/
 
@@ -83,16 +85,16 @@ master/sprites/pokemon/${PokemonInfoData.id}.png"
   `;
         displayPokemonHTML.innerHTML = newInfo;
     }
-}
 
 
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
+
+/* When the user clicks on the button it toggles 
+between hiding and showing the dropdown content with Pokémon */
 function selectPokemonDropdown() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown menu if the user clicks outside of it
+/* Close the dropdown menu if the user clicks outside of it */
 window.onclick = function (event) {
     if (!event.target.matches('.dropbtn')) {
 

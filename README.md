@@ -1,12 +1,12 @@
 <h1> Done by: Andrez Romero </h1>
 
 
-<p><a href="https://github.com/andxz/pokemon_app" target="_blank" >Link to Github Pages</a> <br/>
-    <a href="https://github.com/andxz/pokemon_app" target="_blank" >Link to Github Repository</a> </p>
+<p><a href="https://github.com/andxz/pokemon_app">Link to Github Pages</a> <br/>
+    <a href="https://github.com/andxz/pokemon_app">Link to Github Repository</a> </p>
 
 <p>
 
-This is an Pokemon App that fetches it's information trough 2 API-fetches from the site     <a href="https://pokeapi.co/" target="_blank" >PokéApi</a>. The User can select from the Original 151 Pokémon trough a list and there choose a Pokémon which displays it's stats when clicked. </p>
+This is an Pokemon App that fetches it's information trough 2 API-fetches from the site     <a href="https://pokeapi.co/" target="_blank" >PokéApi</a>. It works as an Pokedex, which means that the user can select from the Original 151 Pokémon trough a list. When a Pokémon is choosen more information about it is showed.</p>
 
 <p> 
 The Pokemon App is made by:
