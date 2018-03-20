@@ -8,12 +8,12 @@ Din kod ska finnas på GitHub och ha en tydlig README med följande information:
 
 <p>
 
-This is an Pokemon App made in that fetches it's information trough 2 API-fetches from the site     <a href="https://pokeapi.co/" target="_blank" >PokeApi</a>. The User can select from the Orignal 151 Pokemon trough a list and there choose a Pokemon which displays it's stats when clicked. </p>
+This is an Pokemon App that fetches it's information trough 2 API-fetches from the site     <a href="https://pokeapi.co/" target="_blank" >PokéApi</a>. The User can select from the Original 151 Pokémon trough a list and there choose a Pokémon which displays it's stats when clicked. </p>
 
 <p> 
 The Pokemon App is made by:
 <ul>
-<li>HTML.</li>
+<li>HTML</li>
 <li>CSS</li>
 <li>JAVASCRIPT</li>
 <li>JSON, API calls made by using fetch()</li>
