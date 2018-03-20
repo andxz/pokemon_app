@@ -7,14 +7,11 @@
     <meta name="description" content="Best Pokedex" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../andrez_romero_ajax/css/style.css">
-
     <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
-
-
-
 </head>
 
 <body>
+    
     <header>
         <div class="main_header">
             <div class="left_header_img">
@@ -23,54 +20,23 @@
                 <img src="../andrez_romero_ajax/images/snorlax.png">
             </div>
             <h1>POKÉDEX OF THE ORIGINAL 151</h1>
-            <br /><br /> 
-<!--
-            <h2>
-                Choose a Pokémon here:
-            </h2> <br /> <br />
--->
-
-<!--            <input type="text" id="searchPokemon" placeholder="Write your Pokemon Here">-->
-<!--            <button class="button_style" onclick="input_Todo()">Submit</button>-->
-
-<div class="dropdown">
-  <button onclick="selectPokemonDropdown()" class="dropbtn">Click here to choose a Pokémon</button>
-  <div id="myDropdown" class="dropdown-content scrollable-menu">
-    <div id="Pokemon">
-        
+            <br /><br />
+            <div class="dropdown">
+                <button onclick="selectPokemonDropdown()" class="dropbtn">Click here to choose a Pokémon</button>
+                <div id="myDropdown" class="dropdown-content scrollable-menu">
+                    <div id="Pokemon">
+                    </div>
                 </div>
-  </div>
-</div>
+            </div>
         </div>
-
-
     </header>
-
+    
     <main>
-
         <div class="middle_parent_box">
             <div class="middle_main_box">
-
-<div id="loading">
-<img id="loading-image" src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" alt="Loading..." />
-</div>  
-
-    <div id="displayPokemon">
-        
-                </div>
-<!--
-  <div id="movieInfo">
-
-  </div>
-                    <div id="weatherInfo">
-    </div>
--->
-
+                <div id="displayPokemon"></div>
             </div>
-
         </div>
-
-
     </main>
 
     <footer>
